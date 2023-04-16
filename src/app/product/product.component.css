@@ -1,0 +1,86 @@
+.container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .btn-primary {
+    margin-bottom: 15px;
+    font-size: 18px;
+    padding: 12px 40px;
+  }
+  
+  .table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #dee2e6;
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px;
+    vertical-align: middle;
+    border: 1px solid #dee2e6;
+  }
+  
+  .table thead th {
+    background-color: #f8f9fa;
+  }
+  
+  .btn-info,
+  .btn-warning,
+  .btn-danger {
+    margin-right: 5px;
+    color: #007bff;
+    background-color: transparent;
+    border: 1px solid #007bff;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-info:hover,
+  .btn-warning:hover,
+  .btn-danger:hover {
+    color: #fff;
+    background-color: #007bff;
+  }
+  
+  .btn-info:focus,
+  .btn-warning:focus,
+  .btn-danger:focus {
+    color: #fff;
+    background-color: #007bff;
+  }
+  
+  .btn-info:active,
+  .btn-warning:active,
+  .btn-danger:active {
+    color: #fff;
+    background-color: #0056b3;
+  }
+  
+  .btn-info:disabled,
+  .btn-warning:disabled,
+  .btn-danger:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+  }
+  
+  .btn-info[disabled],
+  .btn-warning[disabled],
+  .btn-danger[disabled] {
+    opacity: 0.65;
+    pointer-events: none;
+  }
+  
+  .btn-info:not(:disabled):not(.disabled):active,
+  .btn-warning:not(:disabled):not(.disabled):active,
+  .btn-danger:not(:disabled):not(.disabled):active {
+    box-shadow: none;
+  }
+  

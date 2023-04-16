@@ -1,0 +1,34 @@
+<!-- product-add.component.html -->
+
+<div class="container">
+    <h1>Add Product</h1>
+    <form (ngSubmit)="addProduct()" #productForm="ngForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="product.name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="sku">SKU</label>
+        <input type="number" class="form-control" id="sku" [(ngModel)]="product.sku" name="sku" required>
+      </div>
+      <div class="form-group">
+        <label for="price">Price</label>
+        <input type="number" class="form-control" id="price" [(ngModel)]="product.price" name="price" required>
+      </div>
+      <div class="form-group">
+        <label for="image">First Image</label>
+        <input type="text" class="form-control" id="image" [(ngModel)]="product.images1" name="image" required>
+      </div>
+      <div class="form-group">
+        <label for="image">Second Image</label>
+        <input type="text" class="form-control" id="image" [(ngModel)]="product.images2" name="image" required>
+      </div>
+      <div class="form-group">
+        <label for="image">Third Image</label>
+        <input type="text" class="form-control" id="image" [(ngModel)]="product.images3" name="image" required>
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="!productForm.form.valid">Add Product</button>
+      <button type="button" class="btn btn-secondary" (click)="cancel()">Cancel</button>
+    </form>
+  </div>
+  

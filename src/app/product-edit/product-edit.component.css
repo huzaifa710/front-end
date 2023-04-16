@@ -1,0 +1,38 @@
+/* CSS for Edit Product form */
+.form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[readonly] {
+    background-color: #f8f9fa; /* Change background color for read-only input */
+  }
+  
+  button[type="submit"],
+  button[type="button"] {
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+  }
+  

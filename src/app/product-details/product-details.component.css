@@ -1,0 +1,50 @@
+/* CSS for Product Details */
+.product-details {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .loading-message {
+    margin: 1rem;
+    font-size: 1rem;
+  }
+  

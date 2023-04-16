@@ -1,0 +1,33 @@
+<!-- product-details.component.html -->
+<div *ngIf="product">
+  <h2>{{ product.name }}</h2>
+  <p>ID: {{ product.id }}</p>
+  <img
+    [src]="product.images1"
+    alt="{{ product.name }}"
+    width="200"
+    height="200"
+  />
+  <img
+    [src]="product.images2"
+    alt="{{ product.name }}"
+    width="200"
+    height="200"
+  />
+  <img
+    [src]="product.images3"
+    alt="{{ product.name }}"
+    width="200"
+    height="200"
+  />
+  <p>Price: {{ product.price }}</p>
+  <p>SKU: {{ product.sku }}</p>
+  <!-- Add more details as needed -->
+
+  <button (click)="goBack()">Go Back</button>
+  <!-- Add "Go Back" button with click event -->
+</div>
+
+<div *ngIf="!product">
+  <p>Loading product details...</p>
+</div>

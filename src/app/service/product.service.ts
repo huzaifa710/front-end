@@ -2,9 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Product } from '../product.model';
-import { environment } from '../environment/environment.dev';
+import { environment } from '../environment/environment.prod';
 
-console.log('in service file');
 @Injectable({
   providedIn: 'root',
 })

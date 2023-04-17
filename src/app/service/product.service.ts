@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient,HttpParams, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Product } from '../product.model';
 import { environment } from '../environment/environment.prod';
@@ -22,6 +22,11 @@ export class ProductService {
   }
 
   addProduct(product: Product): Observable<Product> {
+    let post_message = product;
+    let header_node = {
+        headers: new HttpHeaders(
+            { 'rejectUnauthorized': 'false' })
+        };
     return this.http.post<Product>(this.apiUrl, product);
   }
 
